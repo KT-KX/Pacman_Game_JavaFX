@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane fx:id="root" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainMenuController">
+    <!-- Background ImageView -->
+    <ImageView fx:id="backgroundImageView" fitHeight="800" fitWidth="600" opacity="0.82" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="file:\C:\Users\Xiaop\Java project\pacmantest3\Pacman2\src\application\images\background.jpg" />
+        </image>
+    </ImageView>
+
+    <!-- Main Menu VBox -->
+    <VBox alignment="CENTER" spacing="50.0" stylesheets="@application.css">
+        <Button onAction="#startGame" text="Play" />
+        <ComboBox fx:id="levelComboBox" promptText="Select Level" />
+        <Button text="Game Rules" onAction="#checkRules" />
+        <Button text="Exit" onAction="#exitApplication"/>
+        <padding>
+            <Insets bottom="100.0" left="100.0" right="100.0" top="100.0" />
+        </padding>
+    </VBox>
+</StackPane>

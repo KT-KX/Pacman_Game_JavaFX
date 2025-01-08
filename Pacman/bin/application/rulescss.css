@@ -1,0 +1,52 @@
+.anchor-pane {
+    -fx-background-color: linear-gradient(to bottom, #f0f0f0, #e0e0e0);
+    -fx-padding: 30;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 20, 0, 0, 0);
+}
+
+.vbox {
+    -fx-alignment: center;
+    -fx-spacing: 30;
+    -fx-padding: 40;
+    -fx-background-color: #ffffff; /* White background color */
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.15), 10, 0, 0, 0);
+}
+
+.title-text {
+    -fx-font-size: 32px;
+    -fx-font-weight: bold;
+    -fx-fill: #333;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 2, 0, 0, 1);
+}
+
+.subtitle-text {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-fill: #555;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 2, 0, 0, 1);
+}
+
+.rule-text {
+    -fx-font-size: 20px;
+    -fx-fill: #444;
+    -fx-padding: 5 10;
+    -fx-background-color: #f9f9f9;
+    -fx-background-radius: 5;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.05), 3, 0, 0, 1);
+}
+
+.back-button {
+    -fx-font-size: 20px;
+    -fx-background-color: #007bff;
+    -fx-text-fill: white;
+    -fx-padding: 12 24;
+    -fx-background-radius: 5;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 10, 0, 0, 0);
+}
+
+.back-button:hover {
+    -fx-background-color: #0056b3;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 0);
+}

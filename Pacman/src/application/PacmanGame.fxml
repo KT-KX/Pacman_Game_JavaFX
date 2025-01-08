@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- import necessary JavaFX classes -->
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Priority?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<!-- Root layout container, an AnchorPane with black background and a controller specified -->
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="application.Model" style="-fx-background-color: black;">
+    <VBox alignment="CENTER" prefWidth="450.0" prefHeight="800.0">
+        <Label text="PACMAN" style="-fx-font-size: 24px; -fx-font-weight: bold;-fx-text-fill: yellow;" />
+        <HBox alignment="CENTER" VBox.vgrow="ALWAYS">
+            <Canvas fx:id="gameCanvas" width="450.0" height="150.0" />
+        </HBox>
+        <!-- creata a HBox where inside contain 2HBox -->
+        <HBox alignment="CENTER">
+        	<HBox alignment="CENTER" VBox.vgrow="ALWAYS">
+            	<Canvas fx:id="gameCanvas" width="50.0" height="150.0" />
+        	</HBox>
+        	<HBox alignment="CENTER">
+        		<Region prefWidth="50.0" /> 
+            	<Canvas fx:id="gameCanvas" width="450.0" height="800.0"  />
+            </HBox>
+        </HBox>
+    </VBox>
+</AnchorPane>
