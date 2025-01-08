@@ -1,134 +1,79 @@
+# Pac-Man_CST210_Java_Assignment
+Pac-Man Game
 
+Overview
+Pac-Man is a classic arcade game where the player navigates Pac-Man through a maze, eating pellets and avoiding ghosts. This version of Pac-Man is implemented using JavaFX, providing a modern graphical interface while retaining the timeless gameplay.
 
-# Pacman Game Application - JavaFX
+Features
 
-This project is a **JavaFX-based Pacman Game Application** that includes a main menu, level selection, game rules page, and the Pacman gameplay itself. The application demonstrates modular programming and clean scene management using JavaFX FXML and controllers.
+Classic Gameplay: Navigate Pac-Man through the maze, eating all the pellets while avoiding the ghosts.
+Levels: Progress through multiple levels by clearing all the pellets.
+Modern Interface: Built with JavaFX for a smooth and visually appealing experience.
+Intuitive Controls: Use the arrow keys to control Pac-Man.
 
-## Table of Contents
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Project Structure](#project-structure)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-  - [Running the Application](#running-the-application)
-- [Code Overview](#code-overview)
-  - [Main Class](#main-class)
-  - [Controllers](#controllers)
-  - [FXML Files](#fxml-files)
-- [Future Enhancements](#future-enhancements)
-- [Screenshots](#screenshots)
-- [License](#license)
+Installation
+Prerequisites: Ensure you have Java JDK 22 and JavaFX SDK installed on your machine.
 
----
+Set Up JavaFX: Make sure to configure your IDE to include JavaFX libraries. Refer to JavaFX Setup for detailed instructions.
 
-## Features
-- **Main Menu**: Allows users to start the game, view game rules, or exit the application.
-- **Level Selection**: Provides options to choose between different levels.
-- **Game Rules Page**: Displays rules for the game and provides a navigation button to return to the main menu.
-- **Pacman Gameplay**: A functional gameplay interface rendered on a canvas.
+Usage
+Running the Game:
 
----
+Open the project in your IDE.
+Run the Main.java file located in the application package.
 
-## Technologies Used
-- **JavaFX**: For UI design and scene management.
-- **FXML**: To define layouts and bind them to respective controllers.
-- **Java**: For implementing logic and application structure.
+Game Controls:
 
----
+Use the arrow keys to move Pac-Man:
+Up Arrow: Move up
+Down Arrow: Move down
+Left Arrow: Move left
+Right Arrow: Move right
 
-## Project Structure
-```
-|-- src/
-    |-- application/
-        |-- Main.java
-        |-- MainMenuController.java
-        |-- RulesPageController.java
-        |-- Model.java
-    |-- fxml/
-        |-- MainMenu.fxml
-        |-- GameRules.fxml
-        |-- PacmanGame.fxml
-    |-- css/
-        |-- application.css
-        |-- rulescss.css
-    |-- images/
-        |-- background.jpg
-```
+Project Structure
 
----
+Pac-Man-Game/
+├── src/
+│   ├── application/
+│   │   ├── Main.java
+│   │   ├── MainMenuController.java
+│   │   ├── RulesPageController.java
+│   │   ├── Model.java
+│   ├── fxml/
+│   │   ├── MainMenu.fxml
+│   │   ├── GameRules.fxml
+│   │   ├── PacmanGame.fxml
+│   ├── css/
+│   │   ├── application.css
+│   │   ├── rulescss.css
+├── resources/
+│   ├── images/
+│   │   ├── background.jpg
+│   │   ├── up.gif
+│   │   ├── down.gif
+│   │   ├── left.gif
+│   │   ├── right.gif
+│   │   ├── heart.png
+│   │   ├── ghost.png
+├── README.md
 
-## Getting Started
+FXML Files
+MainMenu.fxml: Defines the layout of the main menu.
+GameRules.fxml: Defines the layout of the game rules page.
+PacmanGame.fxml: Defines the layout of the game screen.
 
-### Prerequisites
-- Java JDK 8 or later
-- JavaFX SDK (if not included with your JDK)
-- An IDE such as IntelliJ IDEA or Eclipse configured with JavaFX support
+Controllers
+MainMenuController.java: Handles the logic for the main menu.
+RulesPageController.java: Handles the logic for the game rules page.
+GameController.java: Handles the logic for the game screen.
 
-### Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/pacman-javafx.git
-   ```
-2. Open the project in your preferred IDE.
-3. Configure JavaFX library paths in your IDE if required.
+Styles
+application.css: Styles for the main application.
+rulescss.css: Styles for the game rules page.
+Credits
 
-### Running the Application
-1. Compile and run the `Main.java` file.
-2. The main menu will appear, allowing you to start the game, view rules, or exit.
+Developed by: Eng Kuan Tian AIT2209937, Choo Qie Sheng AIT2209935, Sow Wei Thao AIT2209950
 
----
-
-## Code Overview
-
-### Main Class
-The entry point of the application, responsible for:
-- Loading the main menu FXML.
-- Setting the primary stage and initializing controllers.
-
-### Controllers
-- **`MainMenuController`**: Manages the main menu, handles level selection, and transitions to gameplay or game rules.
-- **`RulesPageController`**: Manages the rules page and handles navigation back to the main menu.
-
-### FXML Files
-- **`MainMenu.fxml`**: Defines the layout for the main menu, including buttons and level selection.
-- **`GameRules.fxml`**: Details the rules layout with a back button.
-- **`PacmanGame.fxml`**: Specifies the gameplay layout, including canvas elements for rendering.
-
----
-
-## Future Enhancements
-- Add a scoring system to track progress.
-- Implement additional levels with increased difficulty.
-- Enhance the user interface with animations and sound effects.
-- Include a high-score leaderboard.
-
----
-
-## Screenshots
-![Main Menu](https://via.placeholder.com/600x400?text=Main+Menu+Screenshot)
-*Main Menu with level selection and navigation options.*
-
-![Game Rules](https://via.placeholder.com/600x400?text=Game+Rules+Screenshot)
-*Game Rules page with instructions.*
-
-![Pacman Gameplay](https://via.placeholder.com/600x400?text=Pacman+Gameplay+Screenshot)
-*Gameplay interface showing Pacman and the maze.*
-
----
-
-## License
-This project is licensed under the [MIT License](LICENSE).
-
----
-
-## Acknowledgments
-- JavaFX Documentation: [https://openjfx.io/](https://openjfx.io/)
-- Inspiration from classic Pacman games.
-```
-
-### Notes:
-- Replace placeholder URLs (e.g., `https://via.placeholder.com/...`) with actual image URLs or local paths.
-- Add your GitHub repository URL in the "Installation" section.
-- Replace `your-username` in the clone command with your GitHub username.
-- Include a `LICENSE` file if licensing applies.
+Special Thanks to: 
+License
+This project is licensed under the AIT License. See the LICENSE file for more details.
